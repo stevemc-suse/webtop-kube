@@ -34,6 +34,7 @@ spec:
         - name: webtop-kub-app
           image: ghcr.io/linuxserver/webtop
           env:
+          shm_size: "2gb"
           #  - name: PASSWORD
           #   value: p00p13
           ports:
