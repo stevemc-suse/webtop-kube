@@ -35,6 +35,6 @@ spec:
           image: ghcr.io/linuxserver/webtop
           env:
             - name: PASSWORD
-              value: poopie
+              value: p00p13
           ports:
             - containerPort: 3000
