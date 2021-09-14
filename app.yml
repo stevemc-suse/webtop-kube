@@ -35,7 +35,7 @@ spec:
           image: ghcr.io/linuxserver/webtop:alpine-mate
           env:
           #shm_size: "2gb"
-          #  - name: PASSWORD
-          #   value: p00p13
+            - name: PASSWORD
+              value: p00p13
           ports:
             - containerPort: 3000
