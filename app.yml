@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: webtop-kub-app
-          image: ghcr.io/linuxserver/webtop:alpine-i3
+          image: ghcr.io/linuxserver/webtop:alpine-mate
           env:
           ports:
             - containerPort: 3000
