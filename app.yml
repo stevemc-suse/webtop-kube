@@ -30,8 +30,8 @@ spec:
       labels:
         app: webtop-kub-app        
     volumeMounts:
-        - mountPath: /mnt/vol0
-          name: webtop-vol0
+        - mountPath: /home
+          name: webtop-home
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
@@ -39,7 +39,7 @@ spec:
       terminationGracePeriodSeconds: 30
         
      volumes:
-      - name: webtop-vol0
+      - name: webtop-home
         persistentVolumeClaim:
           claimName: webtop-pv
     spec:
