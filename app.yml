@@ -38,14 +38,14 @@ spec:
       securityContext: {}
       terminationGracePeriodSeconds: 30
         
-     volumes:
-      - name: webtop-home
-        persistentVolumeClaim:
-          claimName: webtop-pv
-    spec:
-      containers:
-        - name: webtop-kub-app
-          image: ghcr.io/linuxserver/webtop:alpine-mate
-          env:
-          ports:
-            - containerPort: 3000
+volumes:
+ - name: webtop-home
+    persistentVolumeClaim:
+    claimName: webtop-pv
+spec:
+    containers:
+- name: webtop-kub-app
+    image: ghcr.io/linuxserver/webtop:alpine-mate
+  env:
+    ports:
+      - containerPort: 3000
