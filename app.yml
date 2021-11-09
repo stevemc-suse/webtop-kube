@@ -29,7 +29,7 @@ spec:
     metadata:
       labels:
         app: webtop-kub-app        
-#volumeMounts:
+volumeMounts:
  #- mountPath: /home
     name: webtop-home
     dnsPolicy: ClusterFirst
