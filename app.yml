@@ -29,14 +29,14 @@ spec:
     metadata:
       labels:
         app: webtop-kub-app        
-    volumeMounts:
-        - mountPath: /home
-          name: webtop-home
-      dnsPolicy: ClusterFirst
-      restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
-      terminationGracePeriodSeconds: 30
+volumeMounts:
+ - mountPath: /home
+    name: webtop-home
+    dnsPolicy: ClusterFirst
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+     terminationGracePeriodSeconds: 30
         
 volumes:
  - name: webtop-home
