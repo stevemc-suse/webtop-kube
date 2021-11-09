@@ -29,8 +29,8 @@ spec:
     metadata:
       labels:
         app: webtop-kub-app        
-volumeMounts:
- - mountPath: /home
+#volumeMounts:
+ #- mountPath: /home
     name: webtop-home
     dnsPolicy: ClusterFirst
     restartPolicy: Always
@@ -38,10 +38,10 @@ volumeMounts:
     securityContext: {}
      terminationGracePeriodSeconds: 30
         
-volumes:
- - name: webtop-home
-    persistentVolumeClaim:
-    claimName: webtop-pv
+#volumes:
+ #- name: webtop-home
+  #  persistentVolumeClaim:
+   # claimName: webtop-pv
 spec:
     containers:
 - name: webtop-kub-app
