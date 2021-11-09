@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
         - name: webtop-kub-app
-          image: ghcr.io/linuxserver/webtop:mate
+          image: ghcr.io/linuxserver/webtop
           env:
             - name: PASSWORD
               value: poopie
