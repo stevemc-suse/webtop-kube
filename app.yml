@@ -35,7 +35,7 @@ spec:
         - name: webtop-kub-app
           image: ghcr.io/linuxserver/webtop:alpine-mate
           env:
-            - name: PASSWORD
-              value: poopie
+       #     - name: PASSWORD
+        #      value: poopie
           ports:
             - containerPort: 3000
